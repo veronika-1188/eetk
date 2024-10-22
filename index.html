@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>ЕЭТКШНЫЕ ВОЙНЫ</title>
+</head>
+<body>
+    <button class="orel" id="orel1"></button>
+    <img class="ment" src="img/ppppp.jpeg" id="ment1">
+    <audio id="myAudio" src="music/Леонид_Каневский_—_Следствие_вели_www_lightaudio_ru.mp3" preload="auto"></audio>
+    <p class="text"  id="text1">Отдай коленную чашечку</p>
+<script>
+    const button = document.getElementById('orel1');
+    const image = document.getElementById('ment1');
+    const audio = document.getElementById('myAudio');
+    const text = document.getElementById('text1');
+    
+
+    function startAnimation() {
+        button.remove();
+        image.style.display = 'block';
+        image.classList.add('full-screen');
+        text.style.display = 'block';
+        text.classList.add('full-text');
+        audio.play();
+    };
+    button.addEventListener('click', startAnimation);
+</script>
+</body>
+</html>

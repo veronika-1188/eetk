@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #23284e;
+
+}
+
+.ment {
+  display: none;
+  width: 10px;
+  height: 10px;
+  animation: scale 5s ease-in-out;
+}
+
+.orel {
+  margin-top: 30vh;
+  width: 10rem;
+  height: 10rem;
+  background-image: url(../img/logotip.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+  border: none;
+}
+
+.orel:hover {
+  cursor: pointer;
+}
+
+.full-screen {
+  width: 100vw;
+  height: 100vh;
+}
+
+.text {
+  display: none;
+  color: red;
+  z-index: 2;
+  animation: text 5s ease-in-out;
+}
+
+@keyframes scale {
+  from {
+    width: 100px;
+    height: 100px;
+  }
+
+  to {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@keyframes text {
+  from {
+    font-size: 10px;
+  }
+
+  to {
+    font-size: calc(20px + 2.5vw);
+    transform: translateY(-7rem);
+  }
+}
+
+.full-text {
+  font-size: calc(20px + 2.5vw);
+  transform: translateY(-7rem);
+}
